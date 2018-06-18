@@ -1,0 +1,19 @@
+
+<div class="span3" ng-controller="chequepaymentCtrl">
+    <h2>Cheque Payment</h2>
+	{{errLogin}}
+    <form action="#">
+    <label>Account Name</label>
+    <input type="text" name="account_name" ng-model="account_name" class="span3">
+    <label>Bank Name</label>
+    <input type="text" name="bank_name" ng-model="bank_name" class="span3">
+    <label>Cheque Date</label>
+    <input type="text" name="cheque_dt" ng-model="cheque_dt" class="span3">
+    <label>Cheque No.</label>
+    <input type="text" name="cheque_no"  ng-model="cheque_no" class="span3">
+	<label>Amount</label>
+    <input type="text" name="amt" ng-model="amt" class="span3">
+    <input type="button" ng-click="cheque_payment()" value="Submit" class="btn btn-primary pull-right">
+    <div class="clearfix"></div>
+    </form>
+</div>
